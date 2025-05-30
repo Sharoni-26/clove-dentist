@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="english"></html>
+  <head>
+    <title>exported project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {
+        line-height: 1.15;
+      }
+      body {
+        margin: 0;
+      }
+      * {
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+        -webkit-font-smoothing: antialiased;
+      }
+      p,
+      li,
+      ul,
+      pre,
+      div,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      figure,
+      blockquote,
+      figcaption {
+        margin: 0;
+        padding: 0;
+      }
+      button {
+        background-color: transparent;
+      }
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
+      }
+      button,
+      select {
+        text-transform: none;
+      }
+      button,
+      [type="button"],
+      [type="reset"],
+      [type="submit"] {
+        -webkit-appearance: button;
+        color: inherit;
+      }
+      button::-moz-focus-inner,
+      [type="button"]::-moz-focus-inner,
+      [type="reset"]::-moz-focus-inner,
+      [type="submit"]::-moz-focus-inner {
+        border-style: none;
+        padding: 0;
+      }
+      button:-moz-focus,
+      [type="button"]:-moz-focus,
+      [type="reset"]:-moz-focus,
+      [type="submit"]:-moz-focus {
+        outline: 1px dotted ButtonText;
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      input {
+        padding: 2px 4px;
+      }
+      img {
+        display: block;
+      }
+      details {
+        display: block;
+        margin: 0;
+        padding: 0;
+      }
+      summary::-webkit-details-marker {
+        display: none;
+      }
+      [data-thq="accordion"] [data-thq="accordion-content"] {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+        padding: 0;
+      }
+      [data-thq="accordion"]
+        details[data-thq="accordion-trigger"][open]
+        + [data-thq="accordion-content"] {
+        max-height: 1000vh;
+      }
+      details[data-thq="accordion-trigger"][open]
+        summary
+        [data-thq="accordion-icon"] {
+        transform: rotate(180deg);
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style: normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+      <div class="frame260934893-container">
+        <div class="frame260934893-frame260934893">
+          <div class="frame260934893-frame260934729">
+            <span class="frame260934893-text10"
+              >Book an Appointment With Clove Dentist in Delhi</span
+            >
+            <div class="frame260934893-frame26095011">
+              <div class="frame260934893-frame260934896">
+                <div class="frame260934893-frame26094931">
+                  <span class="frame260934893-text11">Name</span>
+                </div>
+                <div class="frame260934893-frame26094932">
+                  <span class="frame260934893-text12">Phone</span>
+                </div>
+                <div class="frame260934893-frame260934895">
+                  <div class="frame260934893-frame26094933">
+                    <span class="frame260934893-text13">Captcha</span>
+                  </div>
+                  <div class="frame260934893-frame26095031">
+                    <span class="frame260934893-text14">1514</span>
+                  </div>
+                </div>
+              </div>
+              <div class="frame260934893-frame260934897">
+                <div class="frame260934893-frame26095032">
+                  <img
+                    src="public/external/rectangle30452501-g5xb-200h.png"
+                    alt="Rectangle30452501"
+                    class="frame260934893-rectangle30451"
+                  /><span class="frame260934893-text15"
+                    ><span class="frame260934893-text16"
+                      >I agree to CLOVE Dental’s </span
+                    ><span class="frame260934893-text17">Terms</span
+                    ><span class="frame260934893-text18"> and </span
+                    ><span class="frame260934893-text19">Privacy Policy</span
+                    ><span>
+                      and consent to contact via phone, email, or SMS.</span
+                    ></span
+                  >
+                </div>
+                <div class="frame260934893-frame2609502">
+                  <div class="frame260934893-frame26094934">
+                    <span class="frame260934893-text21"
+                      >Book Free Consultation</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="frame260934893-frame260934733">
+            <div class="frame260934893-frame260934597">
+              <span class="frame260934893-text22">Find Us Across India</span
+              ><span class="frame260934893-text23"
+                >With over 500 clinics across India, you’re never too far from a
+                Clove Dental clinic. Choose your preferred city to book an
+                appointment.</span
+              >
+            </div>
+            <div class="frame260934893-frame260934750">
+              <div class="frame260934893-frame260934746">
+                <div class="frame260934893-frame260934742">
+                  <div class="frame260934893-frame260934675">
+                    <div class="frame260934893-frame2609346791">
+                      <img
+                        src="public/external/frame2609346782501-05b9.svg"
+                        alt="Frame2609346782501"
+                        class="frame260934893-frame260934678"
+                      />
+                      <div class="frame260934893-frame2609346771">
+                        <span class="frame260934893-text24">Delhi/NCR</span
+                        ><span class="frame260934893-text25">190 Clinics</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="frame260934893-frame2609346801">
+                    <div class="frame260934893-frame2609346792">
+                      <img
+                        src="public/external/frame2609347222501-b70v.svg"
+                        alt="Frame2609347222501"
+                        class="frame260934893-frame260934722"
+                      />
+                      <div class="frame260934893-frame2609346772">
+                        <span class="frame260934893-text26">Banglore</span
+                        ><span class="frame260934893-text27">110 Clinics</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="frame260934893-frame260934743">
+                  <div class="frame260934893-frame2609346821">
+                    <div class="frame260934893-frame2609346793">
+                      <img
+                        src="public/external/frame2609346862501-2rbb.svg"
+                        alt="Frame2609346862501"
+                        class="frame260934893-frame260934686"
+                      />
+                      <div class="frame260934893-frame2609346773">
+                        <span class="frame260934893-text28">Mumbai</span
+                        ><span class="frame260934893-text29">40 Clinics</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="frame260934893-frame2609346802">
+                    <div class="frame260934893-frame2609346794">
+                      <img
+                        src="public/external/frame2609346802501-xqc.svg"
+                        alt="Frame2609346802501"
+                        class="frame260934893-frame2609346803"
+                      />
+                      <div class="frame260934893-frame2609346774">
+                        <span class="frame260934893-text30">Chennai</span
+                        ><span class="frame260934893-text31">59 Clinics</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="frame260934893-frame260934744">
+                  <div class="frame260934893-frame2609346811">
+                    <div class="frame260934893-frame2609346831">
+                      <img
+                        src="public/external/vector2501-5nra.svg"
+                        alt="Vector2501"
+                        class="frame260934893-vector10"
+                      />
+                      <div class="frame260934893-frame2609346775">
+                        <span class="frame260934893-text32">Hyderabad</span
+                        ><span class="frame260934893-text33">76 Clinics</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="frame260934893-frame2609346822">
+                    <div class="frame260934893-frame2609346795">
+                      <div class="frame260934893-group1">
+                        <img
+                          src="public/external/vector2501-wjog.svg"
+                          alt="Vector2501"
+                          class="frame260934893-vector11"
+                        />
+                      </div>
+                      <div class="frame260934893-frame2609346776">
+                        <span class="frame260934893-text34">Punjab</span
+                        ><span class="frame260934893-text35">27 Clinics</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="frame260934893-frame260934745">
+                  <div class="frame260934893-frame2609346812">
+                    <div class="frame260934893-frame2609346832">
+                      <div class="frame260934893-frame160251761">
+                        <div class="frame260934893-group2">
+                          <img
+                            src="public/external/vector2501-5sjh.svg"
+                            alt="Vector2501"
+                            class="frame260934893-vector12"
+                          /><img
+                            src="public/external/vector2501-lk.svg"
+                            alt="Vector2501"
+                            class="frame260934893-vector13"
+                          /><img
+                            src="public/external/vector2501-ap26.svg"
+                            alt="Vector2501"
+                            class="frame260934893-vector14"
+                          /><img
+                            src="public/external/vector2501-pjlr.svg"
+                            alt="Vector2501"
+                            class="frame260934893-vector15"
+                          /><img
+                            src="public/external/vector2501-b4w5.svg"
+                            alt="Vector2501"
+                            class="frame260934893-vector16"
+                          /><img
+                            src="public/external/vector2501-kl2o.svg"
+                            alt="Vector2501"
+                            class="frame260934893-vector17"
+                          /><img
+                            src="public/external/vector2501-65gv.svg"
+                            alt="Vector2501"
+                            class="frame260934893-vector18"
+                          />
+                        </div>
+                      </div>
+                      <div class="frame260934893-frame2609346777">
+                        <span class="frame260934893-text36">Pune</span
+                        ><span class="frame260934893-text37">76 Clinics</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="frame260934893-frame2609346823">
+                    <div class="frame260934893-frame2609346796">
+                      <div class="frame260934893-group3">
+                        <img
+                          src="public/external/vector2501-1zo9.svg"
+                          alt="Vector2501"
+                          class="frame260934893-vector19"
+                        />
+                      </div>
+                      <div class="frame260934893-frame2609346778">
+                        <span class="frame260934893-text38">Ahemdabad</span
+                        ><span class="frame260934893-text39">27 Clinics</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="frame260934893-frame260934749">
+                <div class="frame260934893-frame260934747">
+                  <div class="frame260934893-frame260934654">
+                    <img
+                      src="public/external/rectangle30462501-zgs-300h.png"
+                      alt="Rectangle30462501"
+                      class="frame260934893-rectangle30461"
+                    />
+                  </div>
+                  <div class="frame260934893-frame260934656">
+                    <img
+                      src="public/external/rectangle30462501-15ks-300h.png"
+                      alt="Rectangle30462501"
+                      class="frame260934893-rectangle30462"
+                    />
+                  </div>
+                </div>
+                <div class="frame260934893-frame260934748">
+                  <div class="frame260934893-frame260934655">
+                    <img
+                      src="public/external/rectangle30462501-1xub-300h.png"
+                      alt="Rectangle30462501"
+                      class="frame260934893-rectangle30463"
+                    />
+                  </div>
+                  <div class="frame260934893-frame260934657">
+                    <img
+                      src="public/external/rectangle30462501-yo6-300h.png"
+                      alt="Rectangle30462501"
+                      class="frame260934893-rectangle30464"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="frame260934893-frame260934899">
+            <div class="frame260934893-frame260934856">
+              <div class="frame260934893-frame2609489">
+                <span class="frame260934893-text40"
+                  >Expert Guidance for Healthy Smiles</span
+                ><span class="frame260934893-text41"
+                  >Book your free consultation today and take the first step
+                  towards healthy, beautiful teeth.</span
+                >
+              </div>
+              <div class="frame260934893-frame26095012">
+                <div class="frame260934893-frame2609500">
+                  <div class="frame260934893-frame2609491">
+                    <span class="frame260934893-text42">Name</span>
+                  </div>
+                  <div class="frame260934893-frame2609492">
+                    <span class="frame260934893-text43">Mobile Number</span>
+                  </div>
+                </div>
+                <div class="frame260934893-frame26095033">
+                  <img
+                    src="public/external/rectangle30452501-88gl-200h.png"
+                    alt="Rectangle30452501"
+                    class="frame260934893-rectangle30452"
+                  /><span class="frame260934893-text44"
+                    ><span class="frame260934893-text45"
+                      >I agree to CLOVE Dental’s </span
+                    ><span class="frame260934893-text46">Terms</span
+                    ><span class="frame260934893-text47"> and </span
+                    ><span class="frame260934893-text48">Privacy Policy</span
+                    ><span>
+                      and consent to contact via phone, email, or SMS.</span
+                    ></span
+                  >
+                </div>
+                <div class="frame260934893-frame26094935">
+                  <span class="frame260934893-text50"
+                    >Book a Free Consultation</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="frame260934893-frame260934758">
+              <img
+                src="public/external/image4532501-lfqm-400w.png"
+                alt="image4532501"
+                class="frame260934893-image453"
+              />
+              <div class="frame260934893-frame260934757">
+                <div class="frame260934893-frame260934753">
+                  <span class="frame260934893-text51"
+                    >Dental Health Plan-Anniversary Plan</span
+                  ><span class="frame260934893-text52"
+                    ><span
+                      >₹1,700 treatment voucher redeemable against any dental
+                      procedure.</span
+                    ><br /><span
+                      >₹1,000 additional voucher for any treatment (Only one
+                      voucher can be used per bill).</span
+                    ><br /><span
+                      >Unlimited dental consultations and 2D X-rays for an
+                      entire year.</span
+                    ></span
+                  >
+                </div>
+                <div class="frame260934893-frame260934756">
+                  <div class="frame260934893-frame260934755">
+                    <span class="frame260934893-text58">Special Offer</span>
+                    <div class="frame260934893-frame260934754">
+                      <span class="frame260934893-text59">₹ 399</span
+                      ><span class="frame260934893-text60">₹5100</span>
+                    </div>
+                  </div>
+                  <div class="frame260934893-frame52400">
+                    <span class="frame260934893-text61">Buy Now</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="frame260934893-frame26094711">
+            <span class="frame260934893-text62"
+              >Frequently Asked Questions</span
+            >
+            <div class="frame260934893-frame26094712">
+              <div class="frame260934893-frame26094681">
+                <div class="frame260934893-frame26094641">
+                  <span class="frame260934893-text63"
+                    >Can i choose the dentist on my own for treatment ?</span
+                  ><img
+                    src="public/external/vector2501-i5o.svg"
+                    alt="Vector2501"
+                    class="frame260934893-vector20"
+                  />
+                </div>
+                <img
+                  src="public/external/line542501-tedr.svg"
+                  alt="Line542501"
+                  class="frame260934893-line541"
+                />
+                <div class="frame260934893-frame6611">
+                  <span class="frame260934893-text64"
+                    >Will i get the same doctor each time i visit the same
+                    clinic ?</span
+                  ><img
+                    src="public/external/vector2501-pta.svg"
+                    alt="Vector2501"
+                    class="frame260934893-vector21"
+                  />
+                </div>
+                <img
+                  src="public/external/line552501-c39.svg"
+                  alt="Line552501"
+                  class="frame260934893-line551"
+                />
+                <div class="frame260934893-frame6621">
+                  <span class="frame260934893-text65"
+                    >How you are able to provide less prices than other dental
+                    brands ?</span
+                  ><img
+                    src="public/external/vector2501-up5z.svg"
+                    alt="Vector2501"
+                    class="frame260934893-vector22"
+                  />
+                </div>
+                <img
+                  src="public/external/line562501-6oi.svg"
+                  alt="Line562501"
+                  class="frame260934893-line561"
+                />
+                <div class="frame260934893-frame2609465">
+                  <span class="frame260934893-text66"
+                    >How you are able to provide less prices than other dental
+                    brands ?</span
+                  ><img
+                    src="public/external/vector2501-7bs5.svg"
+                    alt="Vector2501"
+                    class="frame260934893-vector23"
+                  />
+                </div>
+              </div>
+              <div class="frame260934893-frame26094682">
+                <div class="frame260934893-frame26094642">
+                  <span class="frame260934893-text67"
+                    >What are your dental clinic timings?</span
+                  ><img
+                    src="public/external/vector2501-8aoi.svg"
+                    alt="Vector2501"
+                    class="frame260934893-vector24"
+                  />
+                </div>
+                <img
+                  src="public/external/line542501-0frs.svg"
+                  alt="Line542501"
+                  class="frame260934893-line542"
+                />
+                <div class="frame260934893-frame6612">
+                  <span class="frame260934893-text68"
+                    >How can I book an appointment?</span
+                  ><img
+                    src="public/external/vector2501-l5i.svg"
+                    alt="Vector2501"
+                    class="frame260934893-vector25"
+                  />
+                </div>
+                <img
+                  src="public/external/line552501-4qso.svg"
+                  alt="Line552501"
+                  class="frame260934893-line552"
+                />
+                <div class="frame260934893-frame6622">
+                  <span class="frame260934893-text69"
+                    >How frequently should I visit a dentist?</span
+                  ><img
+                    src="public/external/vector2501-ep28.svg"
+                    alt="Vector2501"
+                    class="frame260934893-vector26"
+                  />
+                </div>
+                <img
+                  src="public/external/line562501-tg4.svg"
+                  alt="Line562501"
+                  class="frame260934893-line562"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="frame260934893-frame2609567">
+            <div class="frame260934893-frame260934927">
+              <img
+                src="public/external/clovelogo2501-gn5.svg"
+                alt="clovelogo2501"
+                class="frame260934893-clovelogo"
+              />
+              <div class="frame260934893-frame2609569">
+                <div class="frame260934893-frame496">
+                  <span class="frame260934893-text70">Privacy Policy</span
+                  ><span class="frame260934893-text71">Terms of service</span
+                  ><span class="frame260934893-text72">Accessibility</span>
+                </div>
+                <img
+                  src="public/external/line592501-dvxv.svg"
+                  alt="Line592501"
+                  class="frame260934893-line59"
+                /><span class="frame260934893-text73"
+                  >All Rights Reserved - 2024, Clove Dental (a brand name of
+                  M/s. SStar Dental Centre Private Limited). Managed By
+                  Unbund</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    
+    <iframe 
+    style="border: none;" 
+    src="https://www.figma.com/proto/sm9DHhMwT84hL3vv3Rxkkg/Test-Assignment?node-id=4-2262&p=f&t=tbJpia5v9IIVbw0u-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=4%3A2262&show-proto-sidebar=1" 
+  allowfullscreen>
+</iframe>
+
+  </body>
+</html>
